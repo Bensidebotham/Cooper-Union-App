@@ -1,13 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
+import MapView from 'react-native-maps';
 
 function MapScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Map</Text>
+      <MapView style={styles.map}
+      initialRegion={{latitude: 40.7284789272453, longitude: -73.9902219314191, latitudeDelta: 0.1, longitudeDelta: 0.1}} 
+      showsMyLocationButton={true}
+      showsUserLocation = {true}
+      />
     </View>
   );
 }
@@ -40,6 +45,7 @@ function ProfileScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Text>Profile</Text>
+      <Image source={require('./Images/DefaultProfilePic.jpeg')} />
     </View>
   )
 }
@@ -60,12 +66,9 @@ function MyTabs() {
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <NavigationContainer>
+    <NavigationContainer>
         <MyTabs />
-      </NavigationContainer>
-    </View>
+    </NavigationContainer> 
   );
 }
 
@@ -76,4 +79,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  map: {
+    flex: 1,
+    width: "100%",
+    height: "100%",
+  },
+  profilePic: {
+    width: "50%",
+    height: "50%"
+  }
 });
