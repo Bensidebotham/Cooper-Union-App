@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">SummerApp</string>
+=======
+    <string name="app_name">SummerStemApp</string>
+>>>>>>> 256327bbed6e3848db31de028164d7f0de752d52
 </resources>

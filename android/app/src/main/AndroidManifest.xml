@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.summerapp">
+=======
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.summerstemapp">
+>>>>>>> 256327bbed6e3848db31de028164d7f0de752d52
 
   <uses-permission android:name="android.permission.INTERNET"/>
   <!-- OPTIONAL PERMISSIONS, REMOVE WHATEVER YOU DO NOT NEED -->

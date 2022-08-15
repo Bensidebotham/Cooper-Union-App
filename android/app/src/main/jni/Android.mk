@@ -10,7 +10,11 @@ include $(CLEAR_VARS)
 LOCAL_PATH := $(THIS_DIR)
 
 # You can customize the name of your application .so file here.
+<<<<<<< HEAD
 LOCAL_MODULE := summerapp_appmodules
+=======
+LOCAL_MODULE := summerstemapp_appmodules
+>>>>>>> 256327bbed6e3848db31de028164d7f0de752d52
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)
 LOCAL_SRC_FILES := $(wildcard $(LOCAL_PATH)/*.cpp)

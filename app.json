@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "SummerApp",
-    "slug": "SummerApp",
+    "name": "SummerStemApp",
+    "slug": "SummerStemApp",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"

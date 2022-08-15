@@ -9,7 +9,11 @@ platform :ios, podfile_properties['ios.deploymentTarget'] || '12.0'
 install! 'cocoapods',
   :deterministic_uuids => false
 
+<<<<<<< HEAD
 target 'SummerApp' do
+=======
+target 'SummerStemApp' do
+>>>>>>> 256327bbed6e3848db31de028164d7f0de752d52
   use_expo_modules!
   config = use_native_modules!
 
